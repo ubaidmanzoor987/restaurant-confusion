@@ -1,19 +1,11 @@
 import React, { Component } from 'react';
 import {Card, CardImg, CardImgOverlay, CardText, CardBody,
-    CardTitle } from 'reactstrap';
-
-class DishDetail extends Component {
-    constructor(props) {
-        super(props);
-        this.state={
-            comments:this.props.selectedDish
-       }
-        console.log("This is Props " + this.props.selectedDish );
-    }
-    renderDish(dish) {
+    CardTitle,Breadcrumb,BreadcrumbItem } from 'reactstrap';
+import {Link} from 'react-router-dom';
+  function  RenderDish({dish}) {
         if (dish != null)
             return(
-                    <div className="col-12 col-md-5 m-1">
+                    <div>
                         <Card>
                             <CardImg top src={dish.image} alt={dish.name} />
                             <CardBody>
@@ -28,19 +20,20 @@ class DishDetail extends Component {
                 <div></div>
             );
     }
-    renderComment(dish){
-        console.log("This is dish ");
-        if(dish!=null){
+
+
+  function RenderComment({comments}){
+        if(comments!=null){
             return(
-                <div className='col-12 col-md-5 m-1'>
+                <div>
                     <h4>Comments</h4>
                        <ul className="list-unstyled">
-                                {dish.comments.map((comment)=>{
+                                {comments.map((comment)=>{
                                     return( 
                                             <li key={comment.id}>
                                                 <p>{comment.comment}</p>
-                                                {/* <p>--{comment.author}, {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(comment.date)))}</p> */}
-                                                <p>--{comment.author}, {comment.date} </p>
+                                                <p>--{comment.author}, {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(comment.date)))}</p>
+                                                {/* <p>--{comment.author}, {comment.date} </p> */}
                                             </li>
                                          );
                                 })}
@@ -53,15 +46,29 @@ class DishDetail extends Component {
             );
         }  
     }
-    render(){
-        return(
-            <div className="row">
-                {this.renderDish(this.props.selectedDish)}
-                {this.renderComment(this.props.selectedDish)}
-            </div>
+    const DishDetail = (props) => {
             
-
+        return (
+            <div className="container">
+            <div className="row">
+                <Breadcrumb>
+                    <BreadcrumbItem><Link to="/menu">Menu</Link></BreadcrumbItem>
+                    <BreadcrumbItem active>{props.dish.name}</BreadcrumbItem>
+                </Breadcrumb>
+                <div className="col-12">
+                    <h3>{props.dish.name}</h3>
+                    <hr />
+                </div>                
+            </div>
+            <div className="row">
+                <div className="col-12 col-md-5 m-1">
+                    <RenderDish dish={props.dish} />
+                </div>
+                <div className="col-12 col-md-5 m-1">
+                    <RenderComment comments={props.comments} />
+                </div>
+            </div>
+            </div>
         );
     };
-}
 export default DishDetail;
