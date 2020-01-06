@@ -37,7 +37,7 @@ export const DISHES =
         category: 'dessert',
         label:'',
         price:'2.99',
-        featured: false,
+        featured: true,
         description:'A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust and spiced with Indian cardamoms'
         }
     ];

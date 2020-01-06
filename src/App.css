@@ -1,76 +1,76 @@
 .row-header{
-    margin:0px auto;
-    padding:0px auto;
-  }
+  margin:0px auto;
+  padding:0px auto;
+}
+
+.row-content {
+  margin:0px auto;
+  padding: 50px 0px 50px 0px;
+  border-bottom: 1px ridge;
+  min-height:400px;
+}
+ul li a {
+  color:white;
+}
+ul li a:hover{
+  color:white;
+}
+.mybtn{
+  margin-top:2px;
+  border:none;
+  color:#A896D3;
+}
+.mybtn:hover{
+  background-color: transparent;
+  border:none;
+}
+.commentbtn:hover{
+  background-color: transparent;
+  color:inherit;
+}
+
+.footer{
+  background-color: rgb(92, 46, 177);
+  margin:0px auto;
+  padding: 20px 0px 20px 0px;
+}
+.jumbotron {
+  padding:70px 30px 70px 30px;
+  margin:0px auto;
+  background: #9575CD ;
+  color:floralwhite;
+}
+.address-con{
+  font-size:80%;
+  margin:0px;
+}
+.addressfooter{
   
-  .row-content {
-    margin:0px auto;
-    padding: 50px 0px 50px 0px;
-    border-bottom: 1px ridge;
-    min-height:400px;
+}
+
+.navbar-dark {
+  background-color: #512DA8;
+}
+@media(max-width:500px){
+  .sci{
+    margin-top: 15px;
   }
-  ul li a {
-    color:white;
-  }
-  ul li a:hover{
-    color:white;
-  }
-  .mybtn{
-    margin-top:2px;
-    border:none;
-    color:#A896D3;
-  }
-  .mybtn:hover{
-    background-color: transparent;
-    border:none;
-  }
-  .commentbtn:hover{
-    background-color: transparent;
-    color:inherit;
-  }
-  
-  .footer{
-    background-color: rgb(92, 46, 177);
-    margin:0px auto;
-    padding: 20px 0px 20px 0px;
-  }
-  .my-j {
-    padding:70px 30px 70px 30px;
-    margin:0px auto;
-    
-    color:floralwhite;
-  }
-  .address-con{
-    font-size:80%;
-    margin:0px;
-  }
-  .addressfooter{
-    
-  }
-  
-  .navbar-dark {
-    background-color: #512DA8;
-  }
-  @media(max-width:500px){
-    .sci{
-      margin-top: 15px;
-    }
-  }
-  .page-enter{
-    opacity: 0.01;
-    transform: translateX(-100%);
-  }
-  .page-enter-active{
-    opacity: 1;
-    transform: translateX(0%);
-    transition: all 300ms ease-in;
-  }
-  .page-exit{
-    opacity: 1;
-    transform: translateX(0%);
-  }
-  .page-exit-active{
-    opacity: 0.01;
-    transform: translateX(100%);
-    transition: all 300ms ease-out;
-  }
+}
+.page-enter{
+  opacity: 0.01;
+  transform: translateX(-100%);
+}
+.page-enter-active{
+  opacity: 1;
+  transform: translateX(0%);
+  transition: all 300ms ease-in;
+}
+.page-exit{
+  opacity: 1;
+  transform: translateX(0%);
+}
+.page-exit-active{
+  opacity: 0.01;
+  transform: translateX(100%);
+  transition: all 300ms ease-out;
+}

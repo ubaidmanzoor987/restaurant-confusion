@@ -1,0 +1,83 @@
+//import styles from './style.module.css';
+//import CustomRoutes from  './Route';
+//import Clock from './Car';
+/*const myelement = (
+ <div> 
+	<h1 className={styles.myh1}></h1>
+	  <table className={styles.table_my}>
+		  <th>Sr:</th>
+		  <th>Name</th>
+		  <th>Father Name</th>
+		  <th>CNIC#</th>
+		  <th>Date of Birth</th>
+		  <th>Address</th>
+		  <th>Nationality</th>
+		  <th>Religion</th>
+		  
+		<tr>
+		  <td>&nbsp;1</td>
+		  <td>UbaidUllah</td>
+		  <td>Manzoor</td>
+		  <td>35202-1690892-5</td>
+		  <td>26-11-1998</td>
+		  <td>House No 15 BilalPark Sham Nagar chouburji Lahore</td>
+		  <td>Pakistani</td>
+		  <td>Islam</td>
+		  
+		</tr>
+		<tr>
+		  <td>&nbsp;2</td>
+		  <td>Manzoor</td>
+		  <td>Muhammad Rafi</td>
+		  <td>35202-6088479-9</td>
+		  <td>01-01-1958</td>
+		  <td>House No 15 BilalPark Sham Nagar chouburji Lahore</td>
+		  <td>Pakistani</td>
+		  <td>Islam</td>
+		</tr>
+		<tr>
+		  <td>&nbsp;3</td>
+		  <td>Huzaifa</td>
+		  <td>Nadeem Zaman</td>
+		  <td>Not-Registered</td>
+		  <td>19-05-2011</td>
+		  <td>House No 15 BilalPark Sham Nagar chouburji Lahore</td>
+		  <td>Pakistani</td>
+		  <td>Islam</td>
+		</tr>
+		<tr>
+		  <td>&nbsp;4</td>
+		  <td>Anaya</td>
+		  <td>Nadeem Zaman</td>
+		  <td>Not-Registered</td>
+		  <td>02-07-2015</td>
+		  <td>House No 15 BilalPark Sham Nagar chouburji Lahore</td>
+		  <td>Pakistani</td>
+		  <td>Islam</td>
+		</tr>
+	  </table>
+</div>	  
+);
+//var mycar = new Car("Suzuki","Hybrid");
+//<p>This is {mycar.name} Car  and its model is {mycar.model}</p>
+//ReactDOM.render(myelement, document.getElementById('root'));
+
+class Car2 extends React.Component{
+	render()
+	{
+		return myelement;
+	}
+}
+
+function Car1(){
+	//return <p style={{textAlign:"center",color:"#ffffff",backgroundColor:"black"}}>Salam Dosto Kia hal ha aap sab ka</p>;
+	//return <p>This is {mycar.name} Car  and its model is {mycar.model}</p>;
+	//return <p style={{textAlign:"center",color:"#ffffff",backgroundColor:"black"}}><Car/></p>;
+	//return myelement;
+}
+var my = React.createElement('div',null,
+React.createElement(Car,{href:'https://www.google.com',linktext:'Google',target:'_blank',title:'Click For Google'}),
+React.createElement(Car,{href:'https://www.facebook.com',linktext:'FaceBook',target:'_blank',title:'Click For FaceBook'}),
+React.createElement(Car,{href:'https://www.youtube.com',linktext:'Youtube',target:'_blank',title:'Click For Youtube'}),
+React.createElement(Car,{href:'https://web.whatsapp.com',linktext:'Whatsapp',target:'_blank',title:'Click For Whatsapp'}),
+);*/

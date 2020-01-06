@@ -1,0 +1,34 @@
+div
+{
+	overflow-x:auto;
+	//background-color:magenta;
+	height:100vh;
+}
+.myh1
+{
+	text-align:center;
+	color:white;
+	font-family:Arial;
+	
+}
+.table_my
+{
+	border:1px solid lightgrey;
+	width:100%;
+ 	border-collapse: collapse;
+    border-spacing: 2;
+}
+th{
+	text-align:left;
+	padding-right:14px;
+}
+tr:nth-child(even){
+	background-color: #f2f2f2;
+	color:black;
+	
+}
+tr:nth-child(odd){
+	//background-color: #f2f2f2;
+	color:black;
+	
+}
